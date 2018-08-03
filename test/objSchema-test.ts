@@ -2,9 +2,10 @@
 * Copyright 2015-present Ampersand Technologies, Inc.
 */
 
+import * as ObjSchema from '../lib/objSchema';
+import * as Types from '../lib/types';
+
 import { expect } from 'chai';
-import * as ObjSchema from 'overlib/shared/objSchema';
-import * as Types from 'overlib/shared/types';
 
 const ENUM_TYPE = Types.createEnum('ENUM_TYPE', ['ONE', 'TWO']);
 
