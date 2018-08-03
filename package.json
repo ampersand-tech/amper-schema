@@ -1,0 +1,41 @@
+{
+  "name": "amper-schema",
+  "version": "1.0.0",
+  "description": "Object schema and run time types",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "test": "mocha -r ts-node/register test/**/*-test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ampersandtech/amper-schema.git"
+  },
+  "keywords": [
+    "schema",
+    "ampersand",
+    "object"
+  ],
+  "author": "Ampersand Technologies, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ampersandtech/amper-schema/issues"
+  },
+  "homepage": "https://github.com/ampersandtech/amper-schema#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/color": "^3.0.0",
+    "@types/mocha": "^5.2.5",
+    "@types/react": "~16.0.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "react": "~16.0.0",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2",
+    "xml2js": "^0.4.19"
+  },
+  "dependencies": {
+    "amper-utils": "git+ssh://git@github.com:ampersandtech/amper-utils.git"
+  }
+}
