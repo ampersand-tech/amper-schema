@@ -10,8 +10,8 @@ export const SHORTSTR_LENGTH = 191;
 
 declare let module : { exports : any };
 
-type Basic = number | string | boolean;
-type ValidateFunc = (value: any, valType: any, futureFeed?: boolean) => boolean;
+export type Basic = number | string | boolean;
+export type ValidateFunc = (value: any, valType: any, futureFeed?: boolean) => boolean;
 type ToSqlFunc = (val: any, valType?: string) => Basic;
 type FromSqlFunc = (val: Basic, valType?: Basic) => any;
 
@@ -48,7 +48,7 @@ export interface Type {
   toJSON: () => string;
 }
 
-interface TypeTruncatedString extends Type {
+export interface TypeTruncatedString extends Type {
   truncate: (str: string) => string;
 }
 
