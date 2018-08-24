@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ampersandtech/amper-schema.git"
+    "url": "git+https://github.com/ampersand-tech/amper-schema.git"
   },
   "keywords": [
     "schema",
@@ -20,9 +20,9 @@
   "author": "Ampersand Technologies, Inc.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ampersandtech/amper-schema/issues"
+    "url": "https://github.com/ampersand-tech/amper-schema/issues"
   },
-  "homepage": "https://github.com/ampersandtech/amper-schema#readme",
+  "homepage": "https://github.com/ampersand-tech/amper-schema#readme",
   "devDependencies": {
     "@types/chai": "^4.1.4",
     "@types/color": "^3.0.0",
@@ -36,6 +36,6 @@
     "xml2js": "^0.4.19"
   },
   "dependencies": {
-    "amper-utils": "git+ssh://git@github.com:ampersandtech/amper-utils.git"
+    "amper-utils": "git+ssh://git@github.com:ampersand-tech/amper-utils.git"
   }
 }
