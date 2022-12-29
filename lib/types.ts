@@ -3,7 +3,7 @@
 */
 
 
-import * as JsonUtils from 'amper-utils/dist2017/jsonUtils';
+import * as JsonUtils from 'amper-utils/dist/jsonUtils';
 
 export const IDSTR_LENGTH = 65;
 export const SHORTSTR_LENGTH = 191;

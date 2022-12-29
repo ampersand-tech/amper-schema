@@ -1,7 +1,10 @@
+/**
+* Copyright 2015-present Ampersand Technologies, Inc.
+*/
 export declare const IDSTR_LENGTH = 65;
 export declare const SHORTSTR_LENGTH = 191;
-export declare type Basic = number | string | boolean;
-export declare type ValidateFunc = (value: any, valType: any, futureFeed?: boolean) => boolean;
+export type Basic = number | string | boolean;
+export type ValidateFunc = (value: any, valType: any, futureFeed?: boolean) => boolean;
 export interface Type {
     _origType: Type | null;
     _validateType: ValidateFunc;
@@ -39,10 +42,12 @@ export interface SchemaMapNode {
 export interface SchemaArrayNode {
     _idxs: SchemaInternalNode;
 }
-export declare type Schema = SchemaMapNode | SchemaInternalNode | Type | SchemaArrayNode;
+export type Schema = SchemaMapNode | SchemaInternalNode | Type | SchemaArrayNode;
 export declare function interfaceOf<T>(schema: {
     [k in keyof T]: any;
 }): boolean;
+declare function defaultToSql<T>(val: T): T;
+declare function defaultFromSql<T>(val: T): T;
 export declare const OBJECT: Type;
 export declare const OBJECT_NULLABLE: Type;
 export declare const ARRAY: Type;
@@ -94,8 +99,8 @@ export declare function createEnum(enumName: string, values: any, nullable?: boo
     _sqlTypeName: string;
     _caseInsensitive: boolean;
     _isEnum: boolean;
-    _toSql: <T>(val: T) => T;
-    _fromSql: <T>(val: T) => T;
+    _toSql: typeof defaultToSql;
+    _fromSql: typeof defaultFromSql;
     toString: () => string;
     toJSON: () => any;
 };
@@ -118,3 +123,4 @@ export declare function withDefaultValue(type: Type, defaultValue: any): {
 };
 export declare function withMaxStringLength(type: Type, maxLength: number): TypeTruncatedString;
 export declare function isRegisteredType(type: Schema): boolean;
+export {};

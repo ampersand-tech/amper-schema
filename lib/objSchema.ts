@@ -4,9 +4,9 @@
 
 import * as Types from './types';
 
-import * as JsonUtils from 'amper-utils/dist2017/jsonUtils';
-import * as ObjUtils from 'amper-utils/dist2017/objUtils';
-import { StashOf } from 'amper-utils/dist2017/types';
+import * as JsonUtils from 'amper-utils/dist/jsonUtils';
+import * as ObjUtils from 'amper-utils/dist/objUtils';
+import { Stash } from 'amper-utils/dist/types';
 
 
 export const VALIDATE_EXISTS = 0;
@@ -97,8 +97,8 @@ export function validateFields(
   keys: string[],
   fields: any,
   typeChecking: number,
-  ignoredProps?: StashOf<number> | null,
-  tablesModified?: StashOf<number> | null,
+  ignoredProps?: Stash<number> | null,
+  tablesModified?: Stash<number> | null,
   disallowNewFields?: boolean,
 ) {
   if (typeof typeChecking !== 'number') {
