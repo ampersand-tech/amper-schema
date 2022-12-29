@@ -3,9 +3,10 @@
  * Copyright 2015-present Ampersand Technologies, Inc.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.validateFields = exports.getSchemaForPath = exports.getDefaultValuesForSchema = exports.validateSchema = exports.descendSchema = exports.ARRAY_OF = exports.MAP = exports.VALIDATE_ALL_AND_FILL_DEFAULTS = exports.VALIDATE_ALL = exports.VALIDATE_TYPES = exports.VALIDATE_EXISTS = void 0;
 var Types = require("./types");
-var JsonUtils = require("amper-utils/dist2017/jsonUtils");
-var ObjUtils = require("amper-utils/dist2017/objUtils");
+var JsonUtils = require("amper-utils/dist/jsonUtils");
+var ObjUtils = require("amper-utils/dist/objUtils");
 exports.VALIDATE_EXISTS = 0;
 exports.VALIDATE_TYPES = 1;
 exports.VALIDATE_ALL = 2;

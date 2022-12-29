@@ -3,7 +3,8 @@
 * Copyright 2015-present Ampersand Technologies, Inc.
 */
 Object.defineProperty(exports, "__esModule", { value: true });
-var JsonUtils = require("amper-utils/dist2017/jsonUtils");
+exports.isRegisteredType = exports.withMaxStringLength = exports.withDefaultValue = exports.createEnum = exports.checkTypesBackwardsCompatible = exports.validateType = exports.isNullable = exports.interfaceOf = exports.isTypeMetaProperty = exports.isSchemaArrayNode = exports.isSchemaMapNode = exports.isType = exports.SHORTSTR_LENGTH = exports.IDSTR_LENGTH = void 0;
+var JsonUtils = require("amper-utils/dist/jsonUtils");
 exports.IDSTR_LENGTH = 65;
 exports.SHORTSTR_LENGTH = 191;
 function isType(leaf) {
